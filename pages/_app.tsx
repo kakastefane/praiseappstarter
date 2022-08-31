@@ -1,19 +1,16 @@
-import '../styles/globals.css'
+import { NextUIProvider } from '@nextui-org/react';
 import type { AppProps } from 'next/app'
 
+import '../styles/globals.css'
+
 import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Wrapper from '../components/Wrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <NextUIProvider>
       <Header />
-      <Wrapper>
-        <Component {...pageProps} />
-			</Wrapper>
-      <Footer />
-    </>
+      <Component {...pageProps} />
+    </NextUIProvider>
   )
 }
 
