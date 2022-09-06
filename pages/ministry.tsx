@@ -1,9 +1,7 @@
-import { Container } from "@nextui-org/react";
-
 export default function Ministry() {
   return (
-    <Container>
+    <div>
 			<h1>Ministério</h1>
-    </Container>
+    </div>
   );
 }

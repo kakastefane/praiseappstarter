@@ -1,0 +1,136 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.button {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-text-dark);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button svg {
+  width: 100%;
+}
+
+.brand {
+  color: var(--color-text-dark);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.brand span {
+  color: var(--color-primary);
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: .15rem solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: .1rem;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 2.5rem 1rem;
+  background-color: var(--color-background-2);
+  border-bottom: 1px solid var(--color-border-light);
+  z-index: 1;
+}
+
+.userMenu {
+  display: none;
+  position: absolute;
+  top: calc(100% - .5rem);
+  right: .5rem;
+  width: 100%;
+  max-width: max-content;
+  padding: 2rem 1.5rem;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border-light);
+  border-radius: .5rem;
+  z-index: 2;
+}
+
+.userMenu.active,
+.menu.active {
+  display: block;
+}
+
+.userMenuHeader {
+  font-size: .875rem;
+}
+
+.userMenuHeader strong {
+  color: var(--color-text-dark);
+  font-size: 1.25rem;
+}
+
+.userMenuList,
+.menuList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.userMenuList {
+  text-align: right;
+}
+
+.userMenuSeparator,
+.menuSeparator {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.userMenuLink,
+.menuLink {
+  color: var(--color-text-dark);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.userMenuLink.active,
+.menuLink.active {
+  color: var(--color-primary);
+}
+
+.userMenuLink.logout,
+.menuLink.logout {
+  color: red;
+}

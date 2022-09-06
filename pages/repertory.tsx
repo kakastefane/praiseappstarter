@@ -1,9 +1,7 @@
-import { Container } from "@nextui-org/react";
-
 export default function Repertory() {
   return (
-    <Container>
+    <div>
 			<h1>Repertório</h1>
-    </Container>
+    </div>
   );
 }
