@@ -16,7 +16,7 @@ export default function EventCard({ event }: any) {
         <h3 className={styles.eventTitle}>Culto da Família</h3>
         <div className={styles.eventTeam}>
           <span className={styles.eventTeamText}>Escalados:</span>
-          <AvatarGroup members={event.members} />
+          <AvatarGroup members={event.members} active={event.next} />
         </div>
         <Link href="/">
           <a className={styles.eventLink}>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import cx from "classnames";
 
 import styles from "./styles.module.css";
+import Avatar from "../Avatar";
 
 const Header = () => {
 	const { route } = useRouter();
@@ -42,7 +43,7 @@ const Header = () => {
 				</ul>
 			</nav>
 			<button className={styles.avatar} onClick={() => {setUserMenuActive(userMenuActive => !userMenuActive)}}>
-				<img src="https://via.placeholder.com/30" />
+				<Avatar url={''} active={true} user={{"pic": "https://via.placeholder.com/30", "name": "Nome do Usuário"}} />
 			</button>
 			<div className={cx(styles.userMenu, {[styles.active]: userMenuActive})}>
 				<ul className={styles.userMenuList}>

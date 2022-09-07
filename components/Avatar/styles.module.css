@@ -1,0 +1,29 @@
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-background);
+  border: .15rem solid var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: .1rem;
+}
+
+.avatar.active {
+  border: .15rem solid var(--color-primary);
+}
+
+.avatar:not(:first-child) {
+  margin-left: -0.75rem;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}

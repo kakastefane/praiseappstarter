@@ -6,22 +6,70 @@ export default function Home() {
     {
       "next": true,
       "members": [
-        {},{},{}
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        }
       ]
     },
     {
       "members": [
-        {},{},{}
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        }
       ]
     },
     {
       "members": [
-        {},{},{}
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        }
       ]
     },
     {
       "members": [
-        {},{},{}
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        },
+        {
+          "pic": "https://via.placeholder.com/30",
+          "name": "Nome da Pessoa"
+        }
       ]
     }
   ];
@@ -30,8 +78,8 @@ export default function Home() {
     <main className={styles.container}>
       <h2 className={styles.pageTitle}>Escalas</h2>
       <section className={styles.eventsList}>
-        {events.map( event => (
-          <EventCard event={event} />
+        {events.map( (event) => (
+          <EventCard key={event} event={event} />
         ))}
       </section>
     </main>
