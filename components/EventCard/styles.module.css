@@ -1,0 +1,82 @@
+.eventCard {
+  display: flex;
+  border: 1px solid var(--color-border-light);
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.eventTime {
+  background-color: var(--color-text-light);
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.eventCard.next .eventTime {
+  background-color: var(--color-primary);
+}
+
+.eventDay {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 100%;
+  color: var(--color-background);
+}
+
+.eventMonth {
+  font-size: 1.35rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-background);
+}
+
+.eventHour {
+  padding: .5rem .75rem;
+  background-color: var(--color-text-dark);
+  border-radius: .5rem;
+  color: var(--color-background);
+  margin-top: 0.5rem;
+}
+
+.eventInfo {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.eventTitle {
+  font-size: 1.25rem;
+  color: var(--color-text-dark);
+}
+
+.eventTeam {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.eventLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1.5rem;
+  background-color: var(--color-text-light);
+  color: var(--color-background);
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+.eventCard.next .eventLink {
+  background-color: var(--color-primary);
+}
+
+.eventLink svg {
+  width: 1.5rem;
+}
